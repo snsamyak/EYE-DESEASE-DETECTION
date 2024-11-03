@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eye Disease Detection</title>
+  </head>
+  <body>
+    <div class="bg">
+      <div class="mainSection">
+        <div class="bg2">
+          <img id="display-image" src="https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png"
+          style="    height: 100%;
+                    width: 100%;
+    object-fit: cover;"></img>
+        </div>
+        <div class="subSection">
+           <label class="butt" onclick="const bg3 = document.getElementsByClassName('bg3')[0];
+  bg3.innerHTML = '';" >Upload
+            <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg" style="display: none" />
+           </label>
+          <button class="butt2" onclick="predict()">Get Started</button>
+        </div>
+        <div class="bg3"></div>
+      </div>
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+</html>
+
